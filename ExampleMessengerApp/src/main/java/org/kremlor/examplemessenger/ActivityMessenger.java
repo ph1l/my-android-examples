@@ -1,3 +1,17 @@
+package org.kremlor.examplemessenger;
+
+import android.app.Activity;
+import android.os.Messenger;
+import android.content.ServiceConnection;
+import android.view.View;
+import android.os.Bundle;
+import android.content.ComponentName;
+import android.os.IBinder;
+import android.os.Message;
+import android.os.RemoteException;
+import android.content.Intent;
+import android.content.Context;
+
 public class ActivityMessenger extends Activity {
     /** Messenger for communicating with the service. */
     Messenger mService = null;

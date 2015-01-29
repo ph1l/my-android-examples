@@ -1,3 +1,13 @@
+package org.kremlor.examplemessenger;
+
+import android.app.Service;
+import android.os.Messenger;
+import android.content.Intent;
+import android.os.IBinder;
+import android.os.Handler;
+import android.os.Message;
+import android.widget.Toast;
+
 public class MessengerService extends Service {
     /** Command to the service to display a message */
     static final int MSG_SAY_HELLO = 1;
